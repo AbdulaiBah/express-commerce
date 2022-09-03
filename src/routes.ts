@@ -1,10 +1,10 @@
 import { Express, Request, Response } from "express"
-import { applyToProjectHandler, createProjectHandler, findProjectHandler, updateProjectHandler } from "./controller/product.controller"
+import { createProductHandler, findProductHandler, updateProductHandler } from "./controller/product.controller"
 import { createUserHandler } from "./controller/user.controller"
 import { createUserSessionHandler, deleteUserSessionHandler, getUserSessionsHandler } from "./controller/usersession.controller"
 import requireUser from "./middleware/requireuser"
 import validate from "./middleware/validateresource"
-import { applyToProjectSchema, createProjectSchema, findProjectSchema, updateProjectSchema } from "./schema/product.schema"
+import { createProductSchema, findProductSchema, updateProductSchema } from "./schema/product.schema"
 import { createUserSessionSchema } from "./schema/session.schema"
 import { createUserSchema } from "./schema/user.schema"
 
@@ -19,13 +19,11 @@ function routes (app: Express) {
 
     app.delete('/api/usersessions', requireUser, deleteUserSessionHandler)
 
-    app.post('/api/projects', [requireUser, validate(createProjectSchema)], createProjectHandler)
+    app.post('/api/products', [requireUser, validate(createProductSchema)], createProductHandler)
 
-    app.put('/api/projects/:projectId', [requireUser, validate(updateProjectSchema)], updateProjectHandler)
+    app.put('/api/products/:productId', [requireUser, validate(updateProductSchema)], updateProductHandler)
 
-    app.put('/api/projects/apply/:projectId', [requireUser, validate(applyToProjectSchema)], applyToProjectHandler)
-
-    app.get('/api/projects/:projectId', validate(findProjectSchema), findProjectHandler)
+    app.get('/api/products/:productId', validate(findProductSchema), findProductHandler)
 }
 
 export default routes

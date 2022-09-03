@@ -41,6 +41,6 @@ const orderSchema = new mongoose.Schema({
     timestamps: true
 })
 
-const OrderModel = mongoose.model<OrderDocument>('Project', orderSchema)
+const OrderModel = mongoose.model<OrderDocument>('Product', orderSchema)
 
 export default OrderModel

@@ -757,7 +757,7 @@
   dependencies:
     "@types/superagent" "*"
 
-"@types/tmp@^0.2.2":
+"@types/tmp@^0.2.2", "@types/tmp@^0.2.3":
   "integrity" "sha512-dDZH/tXzwjutnuk4UacGgFRwV+JSLaXL1ikvidfJprkb7L9Nx1njcRHHmi3Dsvt7pgqqTEeucQuOrWHPFgzVHA=="
   "resolved" "https://registry.npmjs.org/@types/tmp/-/tmp-0.2.3.tgz"
   "version" "0.2.3"
@@ -1100,7 +1100,7 @@
   dependencies:
     "node-int64" "^0.4.0"
 
-"bson@*", "bson@^4.6.5":
+"bson@*", "bson@^4.6.5", "bson@^4.7.0":
   "integrity" "sha512-VrlEE4vuiO1WTpfof4VmaVolCVYkYTgB9iWgYNOrVlnifpME/06fhFRmONgBhClD5pFC1t9ZWqFUQEQAzY43bA=="
   "resolved" "https://registry.npmjs.org/bson/-/bson-4.7.0.tgz"
   "version" "4.7.0"
@@ -1164,6 +1164,11 @@
   "version" "6.3.0"
 
 "camelcase@^6.2.0":
+  "integrity" "sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA=="
+  "resolved" "https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz"
+  "version" "6.3.0"
+
+"camelcase@^6.3.0":
   "integrity" "sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA=="
   "resolved" "https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz"
   "version" "6.3.0"
@@ -1414,10 +1419,17 @@
   "resolved" "https://registry.npmjs.org/dayjs/-/dayjs-1.10.7.tgz"
   "version" "1.10.7"
 
-"debug@^4.1.0", "debug@^4.1.1", "debug@^4.2.0", "debug@^4.3.4", "debug@4", "debug@4.x":
+"debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.4", "debug@4", "debug@4.x":
   "integrity" "sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz"
   "version" "4.3.4"
+  dependencies:
+    "ms" "2.1.2"
+
+"debug@^4.2.0", "debug@4.3.2":
+  "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
+  "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
+  "version" "4.3.2"
   dependencies:
     "ms" "2.1.2"
 
@@ -1427,13 +1439,6 @@
   "version" "2.6.9"
   dependencies:
     "ms" "2.0.0"
-
-"debug@4.3.2":
-  "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
-  "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
-  "version" "4.3.2"
-  dependencies:
-    "ms" "2.1.2"
 
 "decimal.js@^10.2.1":
   "integrity" "sha512-Nv6ENEzyPQ6AItkGwLE2PGKinZZ9g59vSh2BeH6NqPu0OTKZ5ruJsVqh/orbAnqXc9pBbgXAIrc2EyaCj8NpGg=="
@@ -1474,6 +1479,11 @@
   "integrity" "sha512-tfiWc6BQLXNLpNiR5iGd0Ocu3P3VpxfzFiqubLgMfhfOw9WyvgJBd46CClNn9k3qfbjvT//0cf7AlYRX/OslMQ=="
   "resolved" "https://registry.npmjs.org/denque/-/denque-2.0.1.tgz"
   "version" "2.0.1"
+
+"denque@^2.1.0":
+  "integrity" "sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw=="
+  "resolved" "https://registry.npmjs.org/denque/-/denque-2.1.0.tgz"
+  "version" "2.1.0"
 
 "depd@~1.1.2":
   "integrity" "sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak="
@@ -1957,10 +1967,10 @@
     "agent-base" "6"
     "debug" "4"
 
-"https-proxy-agent@^5.0.0":
-  "integrity" "sha512-EkYm5BcKUGiduxzSt3Eppko+PiNWNEpa4ySk9vTC6wDsQJW9rHSa+UhGNJoRYp7bz6Ht1eaRIa6QaJqO5rCFbA=="
-  "resolved" "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.0.tgz"
-  "version" "5.0.0"
+"https-proxy-agent@^5.0.0", "https-proxy-agent@^5.0.1":
+  "integrity" "sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA=="
+  "resolved" "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz"
+  "version" "5.0.1"
   dependencies:
     "agent-base" "6"
     "debug" "4"
@@ -2850,7 +2860,7 @@
   "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   "version" "1.0.4"
 
-"mongodb-connection-string-url@^2.5.2":
+"mongodb-connection-string-url@^2.5.2", "mongodb-connection-string-url@^2.5.3":
   "integrity" "sha512-f+/WsED+xF4B74l3k9V/XkTVj5/fxFH2o5ToKXd8Iyi5UhM+sO9u0Ape17Mvl/GkZaFtM0HQnzAG5OTmhKw+tQ=="
   "resolved" "https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-2.5.3.tgz"
   "version" "2.5.3"
@@ -2882,6 +2892,36 @@
     "uuid" "^8.3.1"
     "yauzl" "^2.10.0"
 
+"mongodb-memory-server-core@8.9.0":
+  "integrity" "sha512-Ol9BrKij2QVMgtzQ/xl5+5FTonsBmB3L+krn0kfpfo+sHk5uTWvWkPwEpt+yU4cxY2M/yYfMZD8eXfvZz6yEtQ=="
+  "resolved" "https://registry.npmjs.org/mongodb-memory-server-core/-/mongodb-memory-server-core-8.9.0.tgz"
+  "version" "8.9.0"
+  dependencies:
+    "@types/tmp" "^0.2.3"
+    "async-mutex" "^0.3.2"
+    "camelcase" "^6.3.0"
+    "debug" "^4.3.4"
+    "find-cache-dir" "^3.3.2"
+    "get-port" "^5.1.1"
+    "https-proxy-agent" "^5.0.1"
+    "md5-file" "^5.0.0"
+    "mongodb" "~4.9.0"
+    "new-find-package-json" "^2.0.0"
+    "semver" "^7.3.7"
+    "tar-stream" "^2.1.4"
+    "tmp" "^0.2.1"
+    "tslib" "^2.4.0"
+    "uuid" "^8.3.1"
+    "yauzl" "^2.10.0"
+
+"mongodb-memory-server@^8.9.0":
+  "integrity" "sha512-+0bBBRggSdD7mbLGF8+iRFlfzdMvpQnyfk1aDgGqWjdhlLRVTxyTxyY5f+Zr/NA+bt5rehFn1EyCI46QhacUdg=="
+  "resolved" "https://registry.npmjs.org/mongodb-memory-server/-/mongodb-memory-server-8.9.0.tgz"
+  "version" "8.9.0"
+  dependencies:
+    "mongodb-memory-server-core" "8.9.0"
+    "tslib" "^2.4.0"
+
 "mongodb-memory-server@7.6.3":
   "integrity" "sha512-yHDE9FGxOpSRUzitF9Qx3JjEgayCSJI3JOW2wgeBH/5PAsUdisy2nRxRiNwwLDooQ7tohllWCRTXlWqyarUEMQ=="
   "resolved" "https://registry.npmjs.org/mongodb-memory-server/-/mongodb-memory-server-7.6.3.tgz"
@@ -2902,6 +2942,18 @@
     "safe-buffer" "^5.1.2"
   optionalDependencies:
     "saslprep" "^1.0.0"
+
+"mongodb@~4.9.0":
+  "integrity" "sha512-tJJEFJz7OQTQPZeVHZJIeSOjMRqc5eSyXTt86vSQENEErpkiG7279tM/GT5AVZ7TgXNh9HQxoa2ZkbrANz5GQw=="
+  "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-4.9.0.tgz"
+  "version" "4.9.0"
+  dependencies:
+    "bson" "^4.7.0"
+    "denque" "^2.1.0"
+    "mongodb-connection-string-url" "^2.5.3"
+    "socks" "^2.7.0"
+  optionalDependencies:
+    "saslprep" "^1.0.3"
 
 "mongodb@3.x.x || 4.x", "mongodb@4.8.1":
   "integrity" "sha512-/NyiM3Ox9AwP5zrfT9TXjRKDJbXlLaUDQ9Rg//2lbg8D2A8GXV0VidYYnA/gfdK6uwbnL4FnAflH7FbGw3TS7w=="
@@ -2987,6 +3039,13 @@
   dependencies:
     "debug" "^4.3.4"
     "tslib" "^2.4.0"
+
+"new-find-package-json@^2.0.0":
+  "integrity" "sha512-lDcBsjBSMlj3LXH2v/FW3txlh2pYTjmbOXPYJD93HI5EwuLzI11tdHSIpUMmfq/IOsldj4Ps8M8flhm+pCK4Ew=="
+  "resolved" "https://registry.npmjs.org/new-find-package-json/-/new-find-package-json-2.0.0.tgz"
+  "version" "2.0.0"
+  dependencies:
+    "debug" "^4.3.4"
 
 "node-addon-api@^3.1.0":
   "integrity" "sha512-mmcei9JghVNDYydghQmeDX8KoAm0FAiYyIcUt/N4nhyAipB17pllZQDOJD2fotxABnt4Mdz+dKTO7eftLg4d0A=="
@@ -3485,10 +3544,10 @@
   "resolved" "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
   "version" "6.3.0"
 
-"semver@^7.3.2", "semver@^7.3.5", "semver@7.x":
-  "integrity" "sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ=="
-  "resolved" "https://registry.npmjs.org/semver/-/semver-7.3.5.tgz"
-  "version" "7.3.5"
+"semver@^7.3.2", "semver@^7.3.5", "semver@^7.3.7", "semver@7.x":
+  "integrity" "sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g=="
+  "resolved" "https://registry.npmjs.org/semver/-/semver-7.3.7.tgz"
+  "version" "7.3.7"
   dependencies:
     "lru-cache" "^6.0.0"
 
@@ -3577,7 +3636,7 @@
   "resolved" "https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz"
   "version" "4.2.0"
 
-"socks@^2.6.2":
+"socks@^2.6.2", "socks@^2.7.0":
   "integrity" "sha512-scnOe9y4VuiNUULJN72GrM26BNOjVsfPXI+j+98PkyEfsIXroa5ofyjT+FzGvn/xHs73U2JtoBYAVx9Hl4quSA=="
   "resolved" "https://registry.npmjs.org/socks/-/socks-2.7.0.tgz"
   "version" "2.7.0"

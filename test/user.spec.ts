@@ -3,29 +3,31 @@ import supertest from "supertest";
 import * as UserService from "../src/service/user.service";
 import createServer from "../src/utils/server";
 
-const creatorId = new mongoose.Types.ObjectId().toString()
+const userId = new mongoose.Types.ObjectId().toString()
 const app = createServer()
 
 export const userInput = {
-    firstName: 'First',
-    lastName: 'Last',
-    bio: 'bio',
+    firstName: 'Test',
+    lastName: 'User',
     email: 'example1@email.com',
     password: 'password123',
-    instruments: ['keyboard', 'drums'],
-    role: 'producer'
+    phoneNumber: '1234567890',
+    role: 'admin',
 }
 
 export const userDetails = {
-    _id: creatorId,
-    firstName: 'First',
-    lastName: 'Last',
-    email: 'example1@email.com'
+    _id: userId,
+    firstName: 'Test',
+    lastName: 'User',
+    email: 'example1@email.com',
+    phoneNumber: '1234567890',
+    role: 'admin',
 }
 describe('user', () => {
     describe('user registration', () => {
         describe('given username and password are valid', () => {
             it('should return a user', async () => {
+                // @ts-ignore
                 const createUserServiceMock = jest.spyOn(UserService, 'createUser').mockReturnValueOnce(userDetails)
                 const { statusCode, body } = await supertest(app).post('/api/users')
 
