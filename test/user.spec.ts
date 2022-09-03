@@ -27,9 +27,12 @@ describe('user', () => {
     describe('user registration', () => {
         describe('given username and password are valid', () => {
             it('should return a user', async () => {
-                // @ts-ignore
-                const createUserServiceMock = jest.spyOn(UserService, 'createUser').mockReturnValueOnce(userDetails)
-                const { statusCode, body } = await supertest(app).post('/api/users')
+                const createUserServiceMock = jest
+                    .spyOn(UserService, 'createUser')
+                    // @ts-ignore
+                    .mockReturnValueOnce(userDetails)
+            
+                const { statusCode, body } = await supertest(app).post('/api/users').send(userInput)
 
                 expect(statusCode).toBe(200)
                 expect(body).toEqual(userDetails)
