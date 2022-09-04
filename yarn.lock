@@ -3678,6 +3678,6 @@ yn@3.1.1:
   version "3.1.1"
   resolved "https://registry.npmjs.org/yn/-/yn-3.1.1.tgz"
 
-zod@^3.11.6:
-  version "3.11.6"
-  resolved "https://registry.npmjs.org/zod/-/zod-3.11.6.tgz"
+zod@^3.18.0:
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.18.0.tgz#2eed58b3cafb8d9a67aa2fee69279702f584f3bc"
