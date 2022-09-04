@@ -522,9 +522,9 @@
   dependencies:
     bson "*"
 
-"@types/config@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.npmjs.org/@types/config/-/config-0.0.40.tgz"
+"@types/config@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@types/config/-/config-3.3.0.tgz#2b632cb37c639bf8d57054561f5a77d31dcebc1e"
 
 "@types/connect@*":
   version "3.4.35"
@@ -1126,9 +1126,9 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
 
-config@^3.3.6:
-  version "3.3.6"
-  resolved "https://registry.npmjs.org/config/-/config-3.3.6.tgz"
+config@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/config/-/config-3.3.7.tgz#4310410dc2bf4e0effdca21a12a4035860a24ee4"
   dependencies:
     json5 "^2.1.1"
 
