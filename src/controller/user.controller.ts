@@ -13,6 +13,6 @@ export async function createUserHandler(
     }
     catch(e: any){
         logger.error(e)
-        return res.status(409).send(e.message)
+        return res.status(409).send("Error encountered " + e + ".")
     }
 }
