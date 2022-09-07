@@ -22,7 +22,7 @@
     "nanoid": "^4.0.0",
     "pino": "^8.5.0",
     "pino-pretty": "^9.1.0",
-    "zod": "^3.18.0"
+    "zod": "^3.19.0"
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^4.1.0",
