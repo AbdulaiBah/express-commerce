@@ -19,7 +19,7 @@ export async function updateProduct(
     query: FilterQuery<ProductDocument>, update: UpdateQuery<ProductDocument>, options: QueryOptions, 
 ){
     try {
-        return ProductModel.findOneAndUpdate(query, update, options)
+        return ProductModel.findOneAndUpdate(query, [update], options)
     } 
     catch (e: any) {
         throw new Error(e)

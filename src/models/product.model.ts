@@ -1,7 +1,6 @@
 import mongoose from 'mongoose'
-import { customAlphabet } from 'nanoid'
+import { nanoid } from 'nanoid'
 
-const nanoid = customAlphabet('abcdefghijklmnopqrstuvwxyz0123456789', 10)
 export interface ProductDocument extends mongoose.Document {
     productId: string
     title: string

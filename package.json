@@ -1,13 +1,13 @@
 {
-  "name": "ezcollab-backend",
+  "name": "express-commerce",
   "version": "1.0.0",
-  "description": "EzCollab backend",
+  "description": "Node.js Express E-commerce App",
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
-  "author": "EzCollab",
+  "author": "Ojima Abraham",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -20,7 +20,7 @@
     "lodash": "^4.17.21",
     "mongodb-memory-server": "^8.9.1",
     "mongoose": "^6.5.5",
-    "nanoid": "^4.0.0",
+    "nanoid": "^3.3.4",
     "pino": "^8.5.0",
     "pino-pretty": "^9.1.0",
     "zod": "^3.19.0"
