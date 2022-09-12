@@ -1146,11 +1146,11 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
 
-config@^3.3.7:
-  version "3.3.7"
-  resolved "https://registry.npmjs.org/config/-/config-3.3.7.tgz"
+config@^3.3.8:
+  version "3.3.8"
+  resolved "https://registry.yarnpkg.com/config/-/config-3.3.8.tgz#14ef7aef22af25877fdaee696ec64d761feb7be0"
   dependencies:
-    json5 "^2.1.1"
+    json5 "^2.2.1"
 
 console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   version "1.1.0"
@@ -2299,11 +2299,9 @@ json-parse-even-better-errors@^2.3.0:
   version "2.3.1"
   resolved "https://registry.npmjs.org/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz"
 
-json5@2.x, json5@^2.1.1, json5@^2.1.2:
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/json5/-/json5-2.2.0.tgz"
-  dependencies:
-    minimist "^1.2.5"
+json5@2.x, json5@^2.1.2, json5@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.1.tgz#655d50ed1e6f95ad1a3caababd2b0efda10b395c"
 
 jsonwebtoken@^8.5.1:
   version "8.5.1"
@@ -2487,7 +2485,7 @@ minimatch@^5.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimist@^1.2.5, minimist@^1.2.6:
+minimist@^1.2.6:
   version "1.2.6"
   resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
 
