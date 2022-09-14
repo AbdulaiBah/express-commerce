@@ -3657,6 +3657,6 @@ yn@3.1.1:
   version "3.1.1"
   resolved "https://registry.npmjs.org/yn/-/yn-3.1.1.tgz"
 
-zod@^3.19.0:
-  version "3.19.0"
-  resolved "https://registry.npmjs.org/zod/-/zod-3.19.0.tgz"
+zod@^3.19.1:
+  version "3.19.1"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.19.1.tgz#112f074a97b50bfc4772d4ad1576814bd8ac4473"
